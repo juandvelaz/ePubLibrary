@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js",
+    "start-dev": "webpack -w & nodemon -q server/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/juandvelaz/ePubLibrary#readme",
   "dependencies": {
-    "chalk": "^5.0.0",
+    "chalk": "^4.1.1",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15",
